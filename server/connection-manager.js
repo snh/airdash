@@ -37,7 +37,7 @@ class ConnectionManager {
     this.dataSources = new Map();
     this.entities = new LRU({
       max: 1000,
-      maxAge: 300 * 1000,
+      maxAge: 3600 * 1000,
     });
   }
 
