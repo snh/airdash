@@ -25,17 +25,7 @@ function Dashboard() {
               </Card.Body>
             </Card>
           )}
-          <Accordion>
-            <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="settings">
-                Settings
-              </Accordion.Toggle>
-              <Accordion.Collapse eventKey="settings">
-                <Card.Body>
-                  <em>Coming soon!</em>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Card>
+          <Accordion defaultActiveKey="boats">
             {aircraft.length > 0 && (
               <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="aircraft">
